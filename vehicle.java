@@ -1,63 +1,57 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package cardealership;
 
-/**
- *
- * @author oa1021
- */
-public class Vehicle {
-    //Vehicle class has nine fields
-    public String Veh_Make;
-    public int Veh_Vin;
-    public double Veh_Price;
-    public double Veh_NextPay;
-    public double Veh_Remaining;
-    public String Veh_Buyer;
-    public int Veh_BuyNum;
-    public String Veh_BuyAddress;
-    public String Veh_NextDate;
-    
-    //the Vehicle class has a constructor
-    //this constructor is based on nothing passed
-    public Vehicle(){
-        Veh_Make = "DEFAULT";
-        Veh_Vin = 000000;
-        Veh_Price = 000.00;
-        Veh_NextPay = 000.00;
-        Veh_Remaining = 000.00;
-        Veh_Buyer = "DEFAULT";
-        Veh_BuyNum = 0000000000;
-        Veh_BuyAddress = "0000 DEFAULT";
-        Veh_NextDate = "DEFAULT 00, 0000";
-    }
-    
-    public void setMake(String newMake){
-        Veh_Make = newMake;
-    }
-    
-    public void setVin(int newVin){
-        Veh_Vin = newVin;
-    }
-    
-    public void setPrice(double newPrice){
-        Veh_Price = newPrice;
-    }
-    
-    public void setNextPay(double newNextPay){
-        Veh_NextPay = newNextPay;
-    }
-    
-    public void setRemaining(double newRemaining){
-        Veh_Remaining = newRemaining;
-    }
-    
-    public void setBuyer(String newBuyer){
-        Veh_Buyer = newBuyer;
-    }
-    
-    
-    }
+public class Vehicle{
+	/*All of the fields needed for the class Vehicle.
+	Each vehicle has a make, a vin, a total price to be paid
+	a total amount paid, a total amount remaining, the last
+	time a payment was made and how much it was, the next time
+	the payment needs to be made and how much. Whoever buys 
+	the vehicle has a Name, phone number that has area, 
+	3 digits, and 4 digits, an address, and possible an
+	address */
+	public String make;
+	public String vin;
+	public double totalPrice;
+	public double totalPaid;
+	public double totalRemaining;
+	public double lastPayment;
+	public String lastPayMonth;
+	public int lastPayDay;
+	public int lastPayYear;
+	public double nextPayment;
+	public String nextPayMonth;
+	public int nextPayDay;
+	public int nextPayYear;
+	public String buyerName;
+	public int buyerNumber;
+	public string buyerAddress;
+	public int buyerPhoneArea;
+	public int buyerPhone3;
+	public int buyerPhone4;
 
+	//The vehicle class has a constructor
+	//this constructor is based on nothing passed
+	public Vehicle(){
+		make = "default";
+		vin = "a00a00a00";
+		totalPrice = 000.00;
+		totalPaid = 000.00;
+		totalRemaining = 000.00;
+		lastPayment = 000.00;
+		lastPayMonth = "January";
+		lastPayDay = 00;
+		lastPayYear = 0000;
+		nextPayment = 000.00;
+		nextPayMonth = "January";
+		nextPayDay = 00;
+		nextPayYear = 0000;
+		buyerName = "default";
+		buyerNumber = 0;
+		buyerAddress = "Default";
+		buyerPhoneArea = 000;
+		buyerPhone3 = 000;
+		buyerPhone4 = 0000;
+		}
+	
+	public void setMake(String newMake){
+		
